@@ -5,7 +5,7 @@
   <title>Saving Conway's Life</title>
   <link href="style/main.css" rel="stylesheet" type="text/css">
 </head>
-<body onkeypress="key_event(event)">
+<body onKeyDown="key_event(event)">
   <div id="frame">
     <h1>Saving Conway's Life</h1>
     <input class="new_game" type="button" value="New Game" onclick="new_game()">
@@ -21,7 +21,7 @@
     <script src="js/show_game.js"></script>
     <p><span class="important">Conway's evolution rules:</span> Any live cell with 2 or 3 live neighbors lives on to the next generation; otherwise dies. Any dead cell with exactly 3 live neighbors becomes a live cell. See <a href="http://en.wikipedia.org/wiki/Conway%27s_Game_of_Life" target="_blank">this link</a> for detail.</p>
     <p><span class="important">How to play:</span> Use your arrow keys to move red block, and any letter other key for one time evolution. You get points as the cube of the number dead neighbors of the red block become alive. Game over when the read block dies.</p>
-    <p><span class="important">Languages:</span> <a href="index.html">English</a> | <a href="index_zh.html">简体中文</a></p>
+    <p><span class="important">Languages:</span> <a href="index.html">English</a> | <a href="index_zh.html">简体中文</a> | <a href="index_tw.html">正體中文</a></p>
     <hr>
     <p>
       Copyright &copy; 2014 Cong-Xin Qiu<br>

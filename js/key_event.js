@@ -19,7 +19,9 @@ function evaluation () {
 
 function key_event(event) {
 	if (game_over == false) {
-		var key = event.keyCode || event.which;
+		if (!event) event = window.event;
+		var key = event.keyCode;
+		if (event.charCode && key == 0) key = event.charCode;
 		//alert("Key pressed " + key);
 		if (key != 37 && key != 38 && key != 39 && key != 40) {
 			evaluation(); // not left-up-right-down
@@ -27,5 +29,6 @@ function key_event(event) {
 		}
 		else move(live_squares, me_square, key);
 		//alert("center position " + me_square[0]  + me_square[1]);
+		event.preventDefault();
 	}
 }
