@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>拯救康威生命</title>
+  <link href="style/main.css" rel="stylesheet" type="text/css">
+</head>
+<body onkeydown="key_event(event)">
+  <div id="frame">
+    <h1>拯救康威生命</h1>
+    <input class="new_game" type="button" value="New Game" onclick="new_game()">
+    <input class="score" id="score" type="button" value="Score: 0">
+    <hr>
+    <canvas id="myCanvas" width="540" height="540">Your browser does not support the HTML5 canvas tag.</canvas>
+    <script src="js/setup.js"></script>
+    <script src="js/support.js"></script>
+    <script src="js/evolution.js"></script>
+    <script src="js/squares.js"></script>
+    <script src="js/move.js"></script>
+    <script src="js/key_event.js"></script>
+    <script src="js/show_game.js"></script>
+    <p><span class="important">康威生命演化規則：</span> 如果一個活細胞周圍有兩到三個活細胞，則經演化該細胞為生；否則為死。如果一個死細胞周圍又三個活細胞，則經演化其轉為生。你可以參見<a href="http://zh.wikipedia.org/zh-tw/%E5%BA%B7%E5%A8%81%E7%94%9F%E5%91%BD%E6%B8%B8%E6%88%8F" target="_blank">這個鏈接</a>了解更多細節。</p>
+    <p><span class="important">遊戲規則：</span>用箭頭鍵移動紅色細胞，用任何字母箭進入下一次演化。你的得分是紅色細胞周圍起死回生細胞數的三次方。如果紅色細胞死亡即遊戲結束。</p>
+    <p><span class="important">不同语言:</span> <a href="index.html">English</a> | <a href="index_zh.html">简体中文</a> | <a href="index_tw.html">正體中文</a></p>
+    <hr>
+    <p>
+      版權所有 &copy; 2014 裘叢欣<br>
+      這個遊戲受《<a href="http://www.gnu.org/copyleft/lesser.html" target="_blank">GNU寬通用公共許可證</a>》保護。
+    </p>
+  </div>
+</body>
+</html>
+

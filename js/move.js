@@ -1,0 +1,31 @@
+function move(a, me, key) {
+	var i;
+	var j;
+	if (key == 37) {
+		i = (me[0]-1+grid_size)%grid_size;
+		j = me[1];
+	}
+	else if (key == 38) {
+		i = me[0];
+		j = (me[1]-1+grid_size)%grid_size;
+	}
+	else if (key == 39) {
+		i = (me[0]+1)%grid_size;
+		j = me[1];
+	}
+	else if (key == 40) {
+		i = me[0];
+		j = (me[1]+1)%grid_size;
+	}
+
+	if (a[i][j] == 0) {
+		ctx.fillStyle = background_color;
+		roundRect(ctx, me[0]*gap_len+me[0]*square_len, me[1]*gap_len+me[1]*square_len, square_len, square_len, square_round, true, false);
+		ctx.fillStyle = me_color;
+		roundRect(ctx, i*gap_len+i*square_len, j*gap_len+j*square_len, square_len, square_len, square_round, true, false);
+		a[i][j] = 1;
+		a[me[0]][me[1]] = 0;
+		me[0] = i;
+		me[1] = j;
+	}
+}

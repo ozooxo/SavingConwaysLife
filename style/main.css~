@@ -1,0 +1,19 @@
+body, img, form, table, tr, td, div { border:0px; margin:10px; padding:0px; float:center; }
+body, img, p, table, tr, td, input, textarea, span, h1, h2, h3, h4 { text-align:left; }
+p, h1, h2, h3, h4 { border:0px; margin:10px 0px 10px 0px; padding:0px; }
+div#frame { width:530px; margin:0 auto; }
+
+body, p, td, input, textarea { color:#333333; font-size:13px; line-height:19px; font-weight:normal; font-family: "sans-serif",Arial,SimSun; }
+body { background:#FFFFFF; }
+a:link, a:visited, a:active { color:#333333; text-decoration:none; }
+a:hover { color:#FFFFFF; background:#333333; text-decoration:none; }
+
+h1 { font-size:40px; line-height:40px; padding:0px 0px 5px 0px; font-family: "sans-serif",Arial,"Microsoft YaHei",SimHei; }
+
+hr { border:none; margin:20px 0px 20px 0px; background-color:#BBBBBB; border-color:#BBBBBB; height: 1px; }
+
+input, textarea { font-size:20px; line-height:30px; _line-height:30px; border: 0px; margin:0px; _margin:0px; padding:5px; background-color:#CC3311; }
+input.new_game { border:0px; color:#FFFFFF; background-color:#CC3311; }
+input.score { border:0px; color:#FFFFFF; background-color:#888880; }
+
+span.important { font-weight:bold; }
