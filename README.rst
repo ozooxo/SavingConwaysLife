@@ -5,7 +5,7 @@ Saving Conway's Life
 "Saving Conway's Life" is a puzzle game as a variation of `Conway's Game of Life`_. It is written in JavaScript. You can play the game in `this URL`_.
 
 .. _Conway's Game of Life: http://en.wikipedia.org/wiki/Conway%27s_Game_of_Life
-.. _this URL: http://ozooxo.github.io/save-conway/
+.. _this URL: http://ozooxo.github.io/SavingConwaysLife/
 
 Copyright and License
 =====================
